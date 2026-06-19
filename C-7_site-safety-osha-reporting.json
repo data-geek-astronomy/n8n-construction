@@ -1,0 +1,26 @@
+{
+  "id": "yV1moFLC09gC4g6C",
+  "name": "C-7: Site Safety Compliance & OSHA Reporting Agent",
+  "description": "Daily construction site safety inspection analyzer. Uses AI to classify OSHA violations, auto-files incident reports, and alerts project managers with corrective actions.",
+  "trigger": "Schedule (Every 24 hours)",
+  "nodes": [
+    "Daily Safety Inspection Trigger",
+    "Fetch Daily Inspection Reports",
+    "Split Inspections",
+    "Process Inspections in Batches",
+    "OSHA Safety Compliance Agent (GPT-4o)",
+    "Is OSHA Reportable?",
+    "File OSHA Incident Report",
+    "Alert Project Manager - OSHA Violation (Gmail)",
+    "Log Minor Violation to Safety Log",
+    "Notify PM - Minor Violation (Gmail)"
+  ],
+  "n8n_url": "https://aravind5.app.n8n.cloud/workflow/yV1moFLC09gC4g6C",
+  "credentials_required": [
+    "OpenAI API Key",
+    "Gmail OAuth2",
+    "Safety Platform API Bearer Token",
+    "OSHA Reporting API Bearer Token"
+  ],
+  "domain": "Construction"
+}

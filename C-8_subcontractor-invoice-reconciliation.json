@@ -1,0 +1,26 @@
+{
+  "id": "lQhFarz4A38f2flj",
+  "name": "C-8: Subcontractor Invoice Reconciliation & Payment Agent",
+  "description": "Weekly AI-powered subcontractor invoice reconciliation against SOV and compliance docs. Auto-approves with retainage or flags discrepancies, then notifies subcontractors.",
+  "trigger": "Schedule (Weekly)",
+  "nodes": [
+    "Weekly Invoice Review Trigger",
+    "Fetch Pending Subcontractor Invoices",
+    "Split Invoices",
+    "Process Invoices in Batches",
+    "Fetch Contract & SOV Details",
+    "Invoice Reconciliation Agent (GPT-4o)",
+    "Invoice Approved?",
+    "Create Payment Voucher in ERP",
+    "Notify Subcontractor - Invoice Approved (Gmail)",
+    "Flag Invoice for Manual Review",
+    "Notify Subcontractor - Invoice Flagged (Gmail)"
+  ],
+  "n8n_url": "https://aravind5.app.n8n.cloud/workflow/lQhFarz4A38f2flj",
+  "credentials_required": [
+    "OpenAI API Key",
+    "Gmail OAuth2",
+    "ERP System API Bearer Token"
+  ],
+  "domain": "Construction"
+}

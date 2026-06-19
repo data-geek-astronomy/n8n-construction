@@ -1,0 +1,28 @@
+{
+  "id": "aby1Dzm36hwcWkHM",
+  "name": "C-9: Material Procurement & Supply Forecasting Agent",
+  "description": "Daily AI-driven material procurement agent. Cross-references project schedules with inventory, forecasts shortages, auto-creates urgent purchase orders, and alerts project managers.",
+  "trigger": "Schedule (Every 24 hours)",
+  "nodes": [
+    "Daily Procurement Monitor",
+    "Fetch Active Project Schedules",
+    "Fetch Current Inventory Levels",
+    "Split Projects",
+    "Process Projects in Batches",
+    "Supply Forecasting Agent (GPT-4o)",
+    "Critical Shortages Found?",
+    "Create Urgent Purchase Orders",
+    "Alert PM - Critical Material Shortage (Gmail)",
+    "Log Supply Status - No Action Needed",
+    "Send Daily Supply Summary to PM (Gmail)"
+  ],
+  "n8n_url": "https://aravind5.app.n8n.cloud/workflow/aby1Dzm36hwcWkHM",
+  "credentials_required": [
+    "OpenAI API Key",
+    "Gmail OAuth2",
+    "PM Platform API Bearer Token",
+    "Inventory System API Bearer Token",
+    "Procurement System API Bearer Token"
+  ],
+  "domain": "Construction"
+}
